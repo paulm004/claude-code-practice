@@ -67,14 +67,9 @@
       border-left: 3px solid var(--accent);
     }
 
-    .placeholder {
-      border: 2px dashed var(--accent);
-      border-radius: 8px;
-      padding: 2rem 1rem;
-      text-align: center;
-      color: var(--muted);
-    }
-    .placeholder strong { color: var(--accent); display: block; }
+    figure { margin: 0; }
+    figure img { display: block; border: 1px solid var(--border); border-radius: 8px; }
+    figcaption { margin-top: 0.5rem; color: var(--muted); font-size: 0.9rem; }
 
     img { max-width: 100%; height: auto; }
 
@@ -134,13 +129,10 @@
 
     <section id="proof">
       <h2><span>5.</span>Proof</h2>
-      <!-- PLACEHOLDER: replace this div with the screenshot in the second PR:
-      <img src="images/merged-pr.png" alt="Screenshot of a pull request I merged on GitHub">
-      -->
-      <div class="placeholder">
-        <strong>PLACEHOLDER</strong>
-        A screenshot of a merged pull request will be added in a second PR.
-      </div>
+      <figure>
+        <img src="images/merged-pr.png" alt="Screenshot of a pull request I merged on GitHub">
+        <figcaption>My first pull request, merged into <code>main</code> on GitHub.</figcaption>
+      </figure>
     </section>
   </main>
 
